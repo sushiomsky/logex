@@ -2,7 +2,7 @@
 
 date=`date "+%Y-%m-%dT%H:%M:%S"`
 
-cd /usr/local/src/raspiap/sslstrip_parser
+cd /usr/local/src/logex/sslstrip_parser
 nice -n 10 ./sslstrip_parser.py >> /var/log/sslstrip/parser-$date
 
 killall -15 sslstrip
